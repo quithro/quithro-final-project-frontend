@@ -1,0 +1,205 @@
+.results {
+    background-color: #f5f6f7;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    column-gap: 16px;
+    max-width: 1440px;
+    padding: 80px 104px;
+    overflow: hidden;
+}
+  
+.results__title {
+    font-family: "Roboto Slab", Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46px;
+    text-align: left;
+    max-width: 712px;
+    height: 46px;
+    margin-top: 0;
+    margin-bottom: 64px;
+}
+  
+.results__cards {
+    display: grid;.results {
+        background-color: #f5f6f7;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        column-gap: 16px;
+        max-width: 1440px;
+        padding: 80px 104px;
+        overflow: hidden;
+    }
+      
+    .results__title {
+        font-family: "Roboto Slab", Arial, sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 46px;
+        text-align: left;
+        max-width: 712px;
+        height: 46px;
+        margin-top: 0;
+        margin-bottom: 64px;
+    }
+      
+    .results__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-bottom: 64px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+      
+    .results__button {
+        background-color: #fff;
+        max-width: 288px;
+        height: 56px;
+        padding: 17px 90px;
+        border: none;
+        border-radius: 25px;
+        align-self: center;
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        cursor: pointer;
+    }
+      
+    .results__button:hover {
+        background-color: #e8e8e8;
+    }
+      
+    @media screen and (max-width: 1024px) {
+        .results {
+            max-width: 1024px;
+            padding: 60px 80px;
+        }
+      
+        .results__cards {
+            gap: 8px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+      
+    @media screen and (max-width: 768px) {
+        .results {
+            padding: 40px;
+        }
+      
+        .results__title {
+            font-size: 30px;
+            line-height: 34px;
+            margin-bottom: 32px;
+        }
+      
+        .results__cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+      
+    @media screen and (max-width: 480px) {
+        .results {
+            padding: 32px 16px 0;
+        }
+      
+        .results__title {
+            max-width: 288px;
+            height: 34px;
+            margin: auto;
+            margin-bottom: 58px;
+        }
+      
+        .results__cards {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            margin: 0;
+            margin-bottom: 16px;
+            gap: 10px;
+        }
+      
+        .results__button {
+            margin-bottom: 34px;
+        }
+    }
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 64px;
+}
+  
+.results__button {
+    background-color: #fff;
+    max-width: 288px;
+    height: 56px;
+    padding: 17px 90px;
+    border: none;
+    border-radius: 25px;
+    align-self: center;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+  
+@media screen and (max-width: 1024px) {
+    .results {
+        padding: 60px 80px;
+    }
+  
+    .results__cards {
+        gap: 8px;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .results {
+        padding: 40px;
+    }
+  
+    .results__title {
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 32px;
+    }
+  
+    .results__cards {
+        display: flex;
+        flex-wrap: wrap;
+    }   
+}
+  
+@media screen and (max-width: 480px) {
+    .results {
+        padding: 32px 16px 0;
+    }
+  
+    .results__title {
+        max-width: 288px;
+        height: 34px;
+        margin: auto;
+        margin-bottom: 58px;
+    }
+  
+    .results__cards {
+        display: flex;
+        flex-direction: column;
+        grid: none;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        gap: 10px;
+    }
+    .results__button {
+        margin-bottom: 34px;
+    }
+}
