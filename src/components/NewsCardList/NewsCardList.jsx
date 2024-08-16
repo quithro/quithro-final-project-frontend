@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 import SearchedContext from "/src/contexts/SearchedContext.js";
 import SearchResultsContext from "/src/contexts/SearchResultsContext.js";
 
-const NewsCardList = ({
+export const NewsCardList = ({
   handleCardSave,
   handleCardDelete,
   onSignIn,

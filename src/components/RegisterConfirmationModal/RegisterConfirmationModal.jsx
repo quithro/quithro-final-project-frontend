@@ -3,7 +3,6 @@ import "/src/components/ModalWithForm/ModalWithForm.css";
 
 const RegisterConfirmationModal = ({
     onClose,
-    // linkButtonText,
     handleOverlay,
     handleRedirectUser = { handleRedirectUser },
     linkButtonText = "Sign In",

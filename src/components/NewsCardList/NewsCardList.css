@@ -121,7 +121,6 @@
         .results__cards {
             display: flex;
             flex-direction: column;
-            /* justify-content: center; */
             margin: 0;
             margin-bottom: 16px;
             gap: 10px;

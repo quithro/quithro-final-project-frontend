@@ -16,8 +16,7 @@ import SignInModal from "../SignInModal/SignInModal.jsx";
 import SignUpModal from "../SignUpModal/SignUpModal.jsx";
 import RegisterConfirmationModal from "../RegisterConfirmationModal/RegisterConfirmationModal.jsx";
 import MobileModal from "../MobileModal/MobileModal.jsx";
-// import api from "/src/utils/api.js";
-// import auth from "/src/utils/auth.js";
+
 import {
   getSavedCards,
   saveArticle,
@@ -26,11 +25,10 @@ import {
 import { authorize, checkToken } from "/src/utils/auth.js";
 import { getSearchResults } from "/src/utils/newsApi.js";
 import ProtectedRoute from "../ProtectedRoute/ProtectedRoute.jsx";
-import { setToken, getToken } from "/src/utils/token.js";
 
 function App() {
   const [activeModal, setActiveModal] = useState("");
-  const [selectedCard, setSelectedCard] = useState({});
+  const [setSelectedCard] = useState({});
   const [searching, setSearching] = useState(false);
   const [searched, setSearched] = useState(false);
   const [searchError, setSearchError] = useState(false);
@@ -109,49 +107,6 @@ function App() {
       });
   };
 
-  // handle current user
-
-  // const handleCurrentUser = () => {
-  //   const jwt = localStorage.getItem("jwt");
-  //   auth
-  //     .getCurrentUser(jwt)
-  //     .then(({ name, email, _id }) => {
-  //       setIsLoggedIn(true);
-  //       setCurrentUser({ name, email, _id });
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // };
-
-  // handle Login Logout
-
-  // const handleLogin = (userData) => {
-  //   setIsLoggedIn(true);
-  //   handleCurrentUser(userData);
-  // };
-
-  // const handleSignInSubmit = ({ email, password }) => {
-  //   setLoading(true);
-  //   auth
-  //     .login({ email, password })
-
-  //     .then((res) => {
-  //       localStorage.setItem("jwt", res.token);
-  //       handleLogin(res);
-  //       setServerError(false);
-
-  //       handleCloseModal();
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //  setServerError(true);
-  //     })
-  //     .finally(() => {
-  //       setLoading(false);
-  //     });
-  // };
-
   const handleLogOut = () => {
     setIsLoggedIn(false);
 
@@ -205,33 +160,11 @@ function App() {
       });
   };
 
-  // handle card save unsave
-
   // new sub out save
   console.log(savedCards);
   console.log(isLoggedIn);
 
-  // const handleCardSave = (cardData, keyword, isSaved) => {
-  //   // const token = localStorage.getItem("jwt");
-  //   !isSaved
-  //     ? api
-  //         .saveArticle(cardData, keyword)
-  //         .then((savedCard) => {
-  //           setSavedCards((cards) => [...cards, savedCard]);
-  //         })
-  //         .catch((err) => console.log(err))
-  //     : api
-  //         .removeSaveArticle(cardData, keyword)
-  //         .then((savedCard) => {
-  //           setSavedCards((cards) =>
-  //             cards.filter((card) => card._id !== savedCard._id)
-  //           );
-  //         })
-  //         .catch((err) => console.log(err));
-  // };
-
   const handleCardSave = ({ cardData, keyword, isSaved }) => {
-    // const token = localStorage.getItem("jwt");
     if (!isSaved) {
       saveArticle(cardData, keyword)
         .then((savedCard) => {
@@ -265,32 +198,6 @@ function App() {
       });
   };
 
-  // const handleCardDelete = () => {
-  //   const token = localStorage.getItem("jwt");
-  //   api
-  //     .removeSaveArticle(savedCard._id, token)
-  //     .then(() => {
-  //       setSavedCards((cards) =>
-  //         cards.filter((card) => card._id !== savedCard._id)
-  //       );
-  //       handleCloseModal();
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // };
-
-  // use effects
-
-  // useEffect((userData) => {
-  //   const jwt = localStorage.getItem("jwt");
-  //   if (!jwt) {
-  //     return;
-  //   }
-  //   auth;
-  //   handleCurrentUser(userData);
-  // }, []);
-
   useEffect(() => {
     const handleEscape = (e) => {
       if (e.key === "Escape") {
@@ -317,28 +224,6 @@ function App() {
     setCurrentPage(location.pathname);
   }, [location.pathname]);
   console.log(savedCards);
-
-  // useEffect(() => {
-  //   const jwt = localStorage.getItem("jwt");
-
-  //   if (!jwt) {
-  //     return;
-  //   }
-  //   auth
-  //     .getCurrentUser(jwt)
-  //     .then(({ name, email, _id }) => {
-  //       setIsLoggedIn(true);
-  //       setCurrentUser({ name, email, _id });
-  //     })
-  //     .then(() => {
-  //       getSavedCards(jwt).then((articles) => {
-  //         setSavedCards(articles);
-  //       });
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }, [isLoggedIn]);
 
   useEffect(() => {
     const jwt = localStorage.getItem("jwt");

@@ -1,4 +1,4 @@
-import "./NothingFound.css";
+import "./NotFound.css";
 import NotFoundImage from "/src/images/not-found_v1.svg";
 
 const NothingFound = () => {

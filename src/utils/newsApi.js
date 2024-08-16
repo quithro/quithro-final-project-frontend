@@ -22,8 +22,3 @@ export const getSearchResults = (keyword) => {
 
   return newsApi;
 };
-
-// const currentDate = new Date().toLocaleString("default", {
-//   month: "long",
-//   day: "numeric",
-// });

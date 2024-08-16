@@ -21,7 +21,6 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
   
 .confirmation__content-heading {
@@ -31,16 +30,3 @@
     line-height: 28.13px;
     margin-bottom: 14px;
 }
-  
-/* .register__modal_button {
-    background-color: #fff;
-    border-style: none;
-    cursor: pointer;
-    gap: 24px;
-    font-weight: 700;
-    color: rgba(255, 77, 0, 1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-} */

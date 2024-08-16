@@ -9,16 +9,15 @@ function About() {
                 <h2 className="about__title">About the author</h2>
                 <div className="about__description">
                     <p>
-                        This project was completed by Kolt Metz, an aspiring software
-                        engineer. Versed in full-stack skills HTML, CSS, Javascript, React,
-                        Express, Node.js, Figma, MongoDB. Able to produce source code for
-                        websites, applications, & software to provide solutions for the end
-                        users.
+                        This project was completed by Carlos Sierra. Carlos is knowledgable in full-stack skills HTML, CSS, Javascript, React,
+                        Express, Node.js, Figma, MongoDB. Also Carlos is able to produce source code for
+                        websites, programs, software, and applications.
                     </p>
                     <p>
-                        The skills acquired to develop this project was learned through
-                        TripleTen a professional bootcamp. A wonderful experience providing
-                        the knowledge & oppurtunity for an entry level career.
+                        This knowledge was achieved from TripleTen, a software engineering bootcamp. 
+                        This program provided the basis, foundation, and
+                        the knowledge & oppurtunity for an aspiring software engineer to find an 
+                        entry level engineering job.
                     </p>
                 </div>
             </div>

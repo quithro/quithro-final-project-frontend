@@ -6,12 +6,9 @@ import About from "../About/About.jsx";
 import SearchForm from "../SearchForm/SearchForm.jsx";
 import NewsCardList from "../NewsCardList/NewsCardList.jsx";
 import Preloader from "../Preloader/Preloader.jsx";
-import NothingFound from "../NothingFound/NothingFound.jsx";
+import NothingFound from "../NotFound/NotFound.jsx";
 
 const Main = ({
-    onSelectedCard,
-    onCardLike,
-    isLoggedIn,
     loading,
     handleCardSave,
     handleCardDelete,

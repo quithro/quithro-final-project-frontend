@@ -1,84 +1,4 @@
-//import processResponse from "./utils";
-
 export const baseUrl = "http://localhost:3000";
-
-// // export const baseUrl =
-// //   process.env.NODE_ENV === "production"
-// //     ? "https://api.newsexplorer.pakasak.com"
-// //     : "http://localhost:3001";
-
-// const getSavedCards = () => {
-//   return fetch(`${baseUrl}/articles`, {
-//     method: "GET",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//   }).then(processResponse);
-// };
-
-// const addCardSave = ({ cardData, keyword }, token) => {
-//   console.log(123);
-//   console.log(token);
-//   return fetch(`${baseUrl}/articles`, {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//       authorization: `Bearer ${token}`,
-//     },
-//     body: JSON.stringify({
-//       keyword: keyword,
-//       image: cardData.urlToImage,
-//       title: cardData.title,
-//       date: cardData.publishedAt,
-//       text: cardData.description,
-//       source: cardData.source.name,
-//       link: cardData.url,
-//     }),
-//   }).then(processResponse);
-// };
-
-// const deleteCards = (_id, token) => {
-//   return fetch(`${baseUrl}/articles/${_id}`, {
-//     method: "DELETE",
-//     headers: {
-//       "Content-Type": "application/json",
-//       authorization: `Bearer ${token}`,
-//     },
-//   }).then(processResponse);
-// };
-
-// // const addCardSave = (_id, token) => {
-// //   return fetch(`${baseUrl}/items/${_id}/likes`, {
-// //     method: "PUT",
-// //     headers: {
-// //       "Content-Type": "application/json",
-// //       authorization: `Bearer ${token}`,
-// //     },
-// //   }).then(processResponse);
-// // };
-
-// // const removeCardSave = (_id, token) => {
-// //   return fetch(`${baseUrl}/items/${_id}/likes`, {
-// //     method: "DELETE",
-// //     headers: {
-// //       "Content-Type": "application/json",
-// //       authorization: `Bearer ${token}`,
-// //     },
-// //   }).then(processResponse);
-// // };
-
-// const api = {
-//   getSavedCards,
-//   addCardSave,
-//   deleteCards,
-//   // updateUserData,
-//   // addCardSave,
-//   // removeCardSave,
-// };
-
-// export default api;
-
-// stub out
 
 import dog from "/src/images/image_01.png";
 import mountain from "/src/images/image_02.png";
@@ -144,25 +64,9 @@ export function getSavedCards() {
         source: "TreeHugger",
         url: "https://www.treehugger.com",
       },
-      // and have however many you want to show on the saved-news page
     ])
   );
 }
-
-// export function getItems() {
-//   return new Promise((resolve, reject) => resolve([
-//     {
-//       id: "65f7368dfb74bd6a92114c85", // I just generated this at random from a mongodb id generator website
-//       title: "Some news article",
-//       url: "put some actual article URL here"
-//       // ...etc, whatever properties it's supposed to have
-//     },
-//     {
-//       ...another one
-//     },
-//     // and have however many you want to show on the saved-news page
-//   ])
-// }
 
 export function saveArticle(cardData, keyword) {
   // article is a result from the NewsAPI
@@ -179,20 +83,6 @@ export function saveArticle(cardData, keyword) {
     });
   });
 }
-
-// export function saveArticle(article) {
-//   // article is a result from the NewsAPI
-//   return new Promise((resolve, reject) => {
-//     resolve({
-//       id: "65f7371e7bce9e7d331b11a0", // another one made up from the generator
-//       url: article,
-//       url, // Use whatever properties the newsAPI gives you, I just made these up
-//       title: article.title,
-//       imageUrl: article.imagUrl,
-//       // whatever other properties from the newsAPI-given article object you saved to the database
-//     });
-//   });
-// }
 
 export function removeSaveArticle(cardData, keyword) {
   // article is a result from the NewsAPI

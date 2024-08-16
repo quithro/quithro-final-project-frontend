@@ -1,16 +1,7 @@
 .main {
     margin: 0;
 }
-  
-/* .main__content {
-    background-image: url("src/images/georgia-de-lotz--UsJoNxLaNo-unsplash.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: inherit;
-    max-width: 1440px;
-    margin: 0 auto;
-} */
-  
+
 .main__search-content {
     display: flex;
     max-width: 1440px;
@@ -55,7 +46,6 @@
         max-width: 1024px;
         background-position: top;
         background-size: inherit;
-        /* margin-bottom: 160px; */
     }
   
     .main__title {
