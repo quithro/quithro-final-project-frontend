@@ -26,7 +26,7 @@ As for the Create React App, it'll help you to create a template in which you'll
 
 ## Link to Frontend
 
-- [Frontend](git@github.com:quithro/quithro-final-project-frontend.git)
+- [Frontend](https://github.com/quithro/quithro-final-project-frontend.git)
 
 ## Link to Backend
 
