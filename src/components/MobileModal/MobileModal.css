@@ -1,0 +1,126 @@
+.modal__mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin: 0;
+}
+  
+.mobile__content {
+    background-color: #1a1b22;
+    max-height: 275px;
+    max-width: 480px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+  
+.mobile__content-saved {
+    max-height: 275px;
+}
+  
+.mobile__header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+  
+.mobile__title {
+    color: #fff;
+    font-family: "Roboto Slab", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    margin: 16px;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+  
+.mobile__close-button {
+    position: absolute;
+    background-image: url("src/images/close.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    width: 24px;
+    height: 24px;
+    right: 16px;
+    top: 16px;
+    padding: 0;
+    cursor: pointer;
+}
+  
+.mobile__buttons {
+    display: grid;
+    justify-content: center;
+    padding: 16px 16px 24px;
+}
+  
+.mobile__home-button {
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 56px;
+    background-color: transparent;
+    width: 288px;
+    height: 56px;
+    display: flex;
+    justify-content: flex-start;
+}
+  
+.mobile__article-button {
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 56px;
+    background-color: transparent;
+    width: 288px;
+    height: 56px;
+    display: flex;
+    justify-content: flex-start;
+}
+  
+.mobile__user-logout-button {
+    color: white;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 48px;
+    border: 1px solid;
+    background-color: transparent;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 0 19px;
+    gap: 20px;
+    cursor: pointer;
+}
+  
+.mobile__signin-button {
+    color: #fff;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 25px;
+    border: 1px solid white;
+    width: 288px;
+    height: 56px;
+    appearance: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
