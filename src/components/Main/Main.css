@@ -12,7 +12,7 @@
 }
   
 .main__title {
-    color: #fff;
+    color: black;
     font-family: "Roboto Slab", Arial, sans-serif;
     font-size: 60px;
     font-weight: 400;
@@ -25,7 +25,7 @@
 }
   
 .main__description {
-    color: #fff;
+    color: black;
     font-family: "Roboto", Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
